@@ -86,18 +86,17 @@ class _MyAppState extends State<MyApp> {
               )),
           Flexible(
               flex: 1,
-              child: SizedBox(
+              child: Container(
+                color: Colors.cyan,
                 width: double.infinity,
                 height: double.infinity,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    tiemButton(
-                        sec: 30, color: const Color.fromARGB(0, 255, 0, 0)),
-                    tiemButton(
-                        sec: 60, color: const Color.fromARGB(0, 255, 136, 0)),
-                    tiemButton(sec: -30, color: Colors.transparent),
-                    tiemButton(sec: -60, color: Colors.transparent),
+                    tiemButton(sec: 30, color: Colors.white),
+                    tiemButton(sec: 60, color: Colors.amber),
+                    tiemButton(sec: -30, color: Colors.green),
+                    tiemButton(sec: -60, color: Colors.pink),
                   ],
                 ),
               )),
